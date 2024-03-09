@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#74B366"
+    tools:context=".MainActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listItemsRV"
+        android:layout_width="409dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:background="#7BEC8E"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="28dp"
+        android:text="SUBMIT"
+        app:cornerRadius="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/itemNameView"
+        style="@style/NiceBlueFont"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="12dp"
+        android:ems="10"
+        android:hint="Item Name"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/storeView"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/storeView"
+        style="@style/NiceBlueFont"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginBottom="28dp"
+        android:ems="10"
+        android:hint="Ex: https://www.amazon.co.jp/-/en/Palette-Paper-Blue-pastel-blue/dp/B00777SXPS/ref=sr_1_5?crid=2P3JOBZOHHG83&amp;dib=eyJ2IjoiMSJ9.HVZroWbVqIBr09D4SXAndWbXNlhdsPVekCOOP6wMSHdVkPdm9twiyoYFXQfJ7OyWvmsVQT3-dkJR2Fil03R0H-a3p8rMcZUMYwbGUlr5Dtpq2A-gS1l_MDNahSf225jkm7aDYUN0zSAzAJZ0C9jW8LzsR3_7V-POhIv3mgIJBNx5xfGJe2UuP4bXp23Hdnc3i5dbRRew7bMRSRy70D7b-Lj1uLwESb8OBaPKcB-RVJB0w--n3s7Q_A52Wo7DapZTUurNavSsr7qGS2ovlc9piOJlmAolXoQi5DYnz5VFWPM.h-VxKcvOXEu8iCWjr2dTJstOf1UkNz2Tns3rXmhL5WA&amp;dib_tag=se&amp;keywords=pencil&amp;qid=1709959520&amp;sprefix=penc%2Caps%2C250&amp;sr=8-5"
+        android:inputType="text"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/priceView"
+        style="@style/NiceBlueFont"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="12dp"
+        android:ems="10"
+        android:hint="Ex: 5.99"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/submitButton"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
